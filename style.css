@@ -1,0 +1,167 @@
+@import url();
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  background-color:#94C5CC;
+  color:#F8F8F8;
+  margin:0;
+}
+/*-------------- Navigation Menu -------------- */
+nav{
+  background-color:#000100;
+  display: flex;
+  justify-content: flex-end;
+  padding:15px;
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+  z-index: 100;
+  
+ 
+  
+  
+}
+nav a{
+  justify-content: flex-end;
+  color:#fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
+}
+a:hover{
+  text empty-cells: show;
+  text-decoration: underline;
+}
+/* --------------Header --------------*/
+header{
+  height:100vh;
+  background-image: url(https://images.unsplash.com/photo-1545670723-196ed0954986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80);
+   background-size: cover ;
+   position: relative;
+   background-position:center;
+  display: flex;
+  flex-direction: column;;
+  justify-content: center;
+  align-items:center; 
+}
+header h1{
+  font-size:60px;
+}
+header p{
+  margin:0;
+  font-size: 30px;
+}
+ header::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity: 0.6
+}
+header *{
+  position: relative;
+  z-index: 1;
+}
+
+/* --------------SECTION --------------*/
+section{
+  text-align: center;
+  padding:40px;
+  
+}
+#social{
+  color:black;
+}
+section h1{
+  margin:0;
+}
+section p{
+  margin-top:0;
+}
+.bg-socio{
+  background-color: #A1A6B4;
+  padding:10px;
+}
+section ul{
+  list-style-type: none;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  padding:0;
+  margin:0;
+}
+ul li a{
+  color:black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin:5px 10px;
+  font-size:30px;
+  border:3px solid #fff;
+  border-radius:50%;
+  height: 50px;
+  width: 50px;
+  
+}
+/*-------------- Project-------------- */
+#project-title h1{
+  color:black;
+}
+.project-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  max-width:800px;
+  margin:20px auto;
+}
+.project-title{
+   color:black;
+   max-width: 350px; 
+   margin:10px;
+  text-decoration: none;
+  
+  
+}
+
+}
+
+.project-title h4{
+  font-size:20px;
+  
+}
+.project-title img{
+  width:100%;
+}
+/*-------------- Footer --------------*/
+footer{
+  background-color:#000100;
+  padding:10px;
+  text-align: center;
+  height:12vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
+footer i{
+  color: red;
+}
+@media(max-width:440px){
+  section{
+    padding:20px;
+  }
+}
+
